@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="DevBackEnd2s24"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-07-27 02:54:25 "/>
+        <attribute name="created" value="RGV2QmFja0VuZDJzMjQ7U041MTItMTI0Mjk4MzsyMDI0LTA3LTI3OyIxMjozMjoxMSAiOzMxMTQ="/>
+        <attribute name="edited" value="RGV2QmFja0VuZDJzMjQ7U041MTItMTI0Mjk4MzsyMDI0LTA3LTI3OyIxMjo1NDo0NiAiOzE7MzIzNA=="/>
+        <attribute name="edited" value="RGV2QmFja0VuZDJzMjQ7U041MTItMTI0Mjk4MjsyMDI0LTA3LTI3OyIwMjo1NDoyNSAiOzE7MzIyOQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite um n&#250;mero:&quot;" newline="True"/>
+            <input variable="num"/>
+            <if expression="num%2==0">
+                <then>
+                    <output expression="&quot;N&#250;mero par&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;N&#250;mero &#237;mpar&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

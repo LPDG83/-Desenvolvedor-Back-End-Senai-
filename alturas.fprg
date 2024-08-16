@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-13 09:18:13 "/>
+        <attribute name="created" value="VXNlcjtERVNLVE9QLUZRR0NGOE07MjAyNC0wOC0wMjsiMDg6NDA6MTAgIjsyNjc2"/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLUZRR0NGOE07MjAyNC0wOC0xMzsiMDk6MTg6MTMgIjszOzI3OTc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="pessoas" type="Integer" array="False" size=""/>
+            <comment text="Declarado pessoas como vari&#225;vel."/>
+            <declare name="maior, menor, altura, media, soma" type="Real" array="False" size=""/>
+            <comment text="Declarado as variaveis, maior, menor, altura, m&#233;dia e soma. "/>
+            <assign variable="media" expression="0"/>
+            <comment text="Atribuido m&#233;dia como vari&#225;vel."/>
+            <assign variable="soma" expression="0"/>
+            <comment text="Atribuido soma como vari&#225;vel."/>
+            <for variable="pessoas" start="1" end="10" direction="inc" step="1">
+                <comment text="Utilizado o clico FOR para o valor inicial de 1 a 10."/>
+                <output expression="&quot;digite sua altura&quot;" newline="True"/>
+                <input variable="altura"/>
+                <if expression="pessoas ==1">
+                    <then>
+                        <assign variable="menor" expression="altura"/>
+                        <assign variable="maior" expression="altura"/>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="altura&gt;=maior">
+                    <then>
+                        <assign variable="maior" expression="altura"/>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="altura&lt;=menor">
+                    <then>
+                        <assign variable="menor" expression="altura"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="soma" expression="soma+altura"/>
+            </for>
+            <assign variable="media" expression="soma/10"/>
+            <output expression="media" newline="True"/>
+            <output expression="maior" newline="True"/>
+            <output expression="menor" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

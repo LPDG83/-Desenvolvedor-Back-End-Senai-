@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="DevBackEnd2s24"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-13 08:47:14 "/>
+        <attribute name="created" value="RGV2QmFja0VuZDJzMjQ7U041MTItMTI0Mjk4MjsyMDI0LTA3LTI3OyIwMzo1Nzo0MiAiOzMxMjQ="/>
+        <attribute name="edited" value="RGV2QmFja0VuZDJzMjQ7U041MTItMTI0Mjk4MjsyMDI0LTA3LTI3OyIwNDozNDoxMSAiOzE7MzIyNA=="/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLUZRR0NGOE07MjAyNC0wOC0xMzsiMDg6NDc6MTQgIjszOzI3OTk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="contador" type="Integer" array="False" size=""/>
+            <comment text="Foi declarada a variavel Contador."/>
+            <assign variable="contador" expression="0"/>
+            <comment text="Foi atruibuido o valor 0 ao contador."/>
+            <while expression="contador&lt;20">
+                <comment text="Enquanto o contador for menor que 20,vai haver repeti&#231;&#227;o(while)."/>
+                <output expression="contador" newline="True"/>
+                <assign variable="contador" expression="contador+2"/>
+                <comment text=" A cada repeti&#231;&#227;o do while,foi atribuido +2 ao valor do contador."/>
+            </while>
+            <comment text="Quando o contador chegar ao valor 20, encerrar&#225; as repeti&#231;&#245;es e ter&#227;o sido apresentados os 10 primeiros n&#250;meros pares de(0 a 18)."/>
+        </body>
+    </function>
+</flowgorithm>

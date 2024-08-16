@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Tabuada"/>
+        <attribute name="authors" value="caiog"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-16 07:15:38 "/>
+        <attribute name="created" value="Y2Fpb2c7REVTS1RPUC1KSDNBUjhCOzIwMjQtMDgtMTM7IjA5OjM1OjAzICI7Mjc1OQ=="/>
+        <attribute name="edited" value="Y2Fpb2c7REVTS1RPUC1KSDNBUjhCOzIwMjQtMDgtMTM7IjEwOjAxOjI1ICI7NDsyODU5"/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLUZRR0NGOE07MjAyNC0wOC0xNjsiMDc6MTU6MzggIjs5OzI4MDg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="resultado, resposta, num1, num2" type="Integer" array="False" size=""/>
+            <comment text="Foram declaradas as vari&#225;veis resultado,&#13;&#10;resposta e os num1 e num2."/>
+            <comment text="Para as vari&#225;veis resultado e resposta foi atribu&#237;do o valor zero."/>
+            <assign variable="resultado" expression="0"/>
+            <assign variable="resposta" expression="0"/>
+            <comment text="  Foram atribuidos os valores 4 e 9 para as vari&#225;veis num1 e num2.&#13;&#10;"/>
+            <assign variable="num1" expression="4"/>
+            <assign variable="num2" expression="9"/>
+            <while expression="resultado == resposta">
+                <comment text=" Foi utilizado while,e o loop ocorrer&#225; enquanto o jogador acertar a resposta (ou seja enquanto a variavel resposta for igual a variavel resultado), e quando errar dai finaliza o jogo. &#13;&#10;"/>
+                <output expression="num1&amp;&quot; X &quot;&amp;num2" newline="True"/>
+                <input variable="resposta"/>
+                <comment text="O resultado da multiplica&#231;&#227;o de num1 e num2 foi atribuido para a variavel resultado."/>
+                <assign variable="resultado" expression="num1 * num2"/>
+                <comment text="num1 ser&#225; igual &#224; (&quot;num1&quot;) + 3&#13;&#10;&#13;&#10;e&#13;&#10;&#13;&#10;num2 ser&#225; igual &#224; (&quot;num2&quot;) + 2"/>
+                <assign variable="num1" expression="num1 + 3"/>
+                <assign variable="num2" expression="num2 + 2"/>
+            </while>
+            <comment text="Quando o jogador errar a resposta, o jogo ser&#225; encerrado.&#13;&#10;"/>
+        </body>
+    </function>
+</flowgorithm>
